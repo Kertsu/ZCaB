@@ -1,0 +1,17 @@
+<nav class="fixed top-0 px-10 w-full flex justify-between items-center bg-zcb-primary border-b-[bg-zcb-secondary] border-b">
+    <div class="px-2 flex gap-3 items-center justify-start" >
+        <div class="w-16">
+            <a routerLink="/home">
+                <img src="assets/images/logo.jpg" alt="Zhahnelle's Curtains and Beddings logo">
+            </a>
+        </div>
+        <h3 class="hidden md:block md:text-2xl md:tracking-[.125em]">ZHAHNELLE'S</h3>
+    </div>
+    <div class="hidden md:flex justify-between items-center gap-6">
+        <a class="px-4 py-2 font-medium rounded-md hover:bg-zcb-secondary " routerLink="/home">Home</a>
+        <a class="px-4 py-2 font-medium rounded-md hover:bg-zcb-secondary " routerLink="/products">Products</a>
+    </div>
+    <div class="flex justify-center items-center md:hidden">
+        <fa-icon class="text-lg" (click)="toggleIcon()" [icon]="icon"></fa-icon>
+    </div>
+</nav>
