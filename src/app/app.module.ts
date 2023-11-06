@@ -12,6 +12,7 @@ import { ProductsComponent } from './pages/products/products.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { HomeSectionTwoComponent } from './components/home-section-two/home-section-two.component';
 import { HomeSectionThreeComponent } from './components/home-section-three/home-section-three.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HomeSectionThreeComponent } from './components/home-section-three/home-
     ProductsComponent,
     CarouselComponent,
     HomeSectionTwoComponent,
-    HomeSectionThreeComponent
+    HomeSectionThreeComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

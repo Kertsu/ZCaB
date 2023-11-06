@@ -3,40 +3,19 @@
         <h1 id="custom-font-family" class="text-2xl md:text-5xl">What We Have to Offer?</h1>
     </div>
     <div class="w-full h-full flex flex-col gap-4 md:flex-row">
-        <div class="flex flex-col gap-2 border justify-center items-center bg-zcb-primary rounded-md p-4 md:w-1/3 md:justify-center md:items-center">
-            <div class="w-[30%] md:w-[20%] flex items-center">
-                <div class="w-20 h-20 flex justify-center items-center rounded-full border bg-zcb-tertiary">
-                    <fa-icon class="text-4xl text-[#FAF8F4]" [icon]="modern" />
+        <ng-container *ngFor="let item of data">
+            <div class="flex flex-col gap-2 border justify-center items-center bg-zcb-primary rounded-md p-4 md:w-1/3 md:justify-center md:items-center">
+                <div class="w-[30%] md:w-[20%] flex items-center">
+                    <div class="w-20 h-20 flex justify-center items-center rounded-full border bg-zcb-tertiary">
+                        <fa-icon class="text-4xl text-[#FAF8F4]" [icon]="item.icon" />
+                    </div>
+                </div>
+                <div class="flex gap-1 flex-col w-[90%] md:w-[80%] text-center">
+                    <h1 class="text-xl font-semibold">{{item.title}}</h1>
+                    <p>{{item.text}}</p>
                 </div>
             </div>
-            <div class="flex gap-1 flex-col w-[90%] md:w-[80%] text-center">
-                <h1 class="text-xl font-semibold">Modern Design</h1>
-                <p>Explore our fresh take on modern design. Transform your space with today's style and a touch of innovation.</p>
-            </div>
-        </div>
-        <!--  -->
-        <div class="flex flex-col gap-2 border justify-center items-center bg-zcb-primary rounded-md p-4 md:w-1/3 md:justify-center md:items-center">
-            <div class="w-[30%] md:w-[20%] flex items-center">
-                <div class="w-20 h-20 flex justify-center items-center rounded-full border bg-zcb-tertiary">
-                    <fa-icon class="text-4xl text-[#FAF8F4]" [icon]="quality" />
-                </div>
-            </div>
-            <div class="flex gap-1 flex-col w-[90%] md:w-[80%] text-center">
-                <h1 class="text-xl font-semibold">Quality Products</h1>
-                <p>Discover excellence in every detail with our meticulously crafted quality products.
-            </div>
-        </div>
-        <!--  -->
-        <div class="flex flex-col gap-2 border justify-center items-center bg-zcb-primary rounded-md p-4 md:w-1/3 md:justify-center md:items-center">
-            <div class="w-[30%] md:w-[20%] flex items-center">
-                <div class="w-20 h-20 flex justify-center items-center rounded-full border bg-zcb-tertiary">
-                    <fa-icon class="text-4xl text-[#FAF8F4]" [icon]="trusted" />
-                </div>
-            </div>
-            <div class="flex gap-1 flex-col w-[90%] md:w-[80%] text-center">
-                <h1 class="text-xl font-semibold">Trusted</h1>
-                <p>Building trust one interaction at a time. We're committed to earning and maintaining your trust.</p>
-            </div>
-        </div>
+        </ng-container>
+
     </div>
 </div> 
