@@ -6,3 +6,12 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+#custom-font-family{
+    font-family: custom-font;
+}
+
+@font-face {
+    font-family: 'custom-font';
+    src: url('../src/assets/fonts/MaginiaRegular-BWP6x.woff');
+}
