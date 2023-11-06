@@ -10,6 +10,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { HomeSectionTwoComponent } from './components/home-section-two/home-section-two.component';
+import { HomeSectionThreeComponent } from './components/home-section-three/home-section-three.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     FooterComponent,
     HomeComponent,
     ProductsComponent,
-    CarouselComponent
+    CarouselComponent,
+    HomeSectionTwoComponent,
+    HomeSectionThreeComponent
   ],
   imports: [
     BrowserModule,
