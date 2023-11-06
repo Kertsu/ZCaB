@@ -1,16 +1,16 @@
-<div class="bg-zcb-alternate w-full pb-16 px-10 flex flex-col gap-2 md:gap-6">
+<div class="bg-zcb-alternate w-full pb-16 px-10 flex flex-col gap-2 2xl:gap-6">
     <div class="mt-16 text-center w-full">
-        <h1 id="custom-font-family" class="text-2xl md:text-5xl">What We Have to Offer?</h1>
+        <h1 id="custom-font-family" class="text-2xl 2xl:text-5xl">What We Have to Offer?</h1>
     </div>
-    <div class="w-full h-full flex flex-col gap-4 md:flex-row">
+    <div class="w-full h-full flex flex-col gap-4 lg:flex-row">
         <ng-container *ngFor="let item of data">
-            <div class="flex flex-col gap-4 border justify-center items-center bg-zcb-primary rounded-md p-4 md:w-1/3 md:justify-center md:items-center">
-                <div class="w-[30%] md:w-[20%] flex items-center">
+            <div class="flex flex-col gap-4 border justify-center items-center bg-zcb-primary rounded-md p-4 2xl:w-1/3 2xl:justify-center 2xl:items-center">
+                <div class="w-[30%] md:w-full md:justify-center 2xl:w-[20%] flex items-center">
                     <div class="w-20 h-20 flex justify-center items-center rounded-full border bg-zcb-tertiary">
                         <fa-icon class="text-4xl text-[#FAF8F4]" [icon]="item.icon" />
                     </div>
                 </div>
-                <div class="flex gap-1 flex-col w-[90%] md:w-[80%] text-center">
+                <div class="flex gap-1 flex-col w-[90%] 2xl:w-[80%] text-center">
                     <h1 class="text-xl font-semibold">{{item.title}}</h1>
                     <p>{{item.text}}</p>
                 </div>
