@@ -1,1 +1,13 @@
-<p>gallery works!</p>
+<div class="bg-zcb-alternate">
+    <div class="mb-6 border"></div>
+    <div class="flex flex-col gap-4">
+        <h1 id="custom-font-family" class="text-2xl md:text-5xl text-center">Featured</h1>
+        <div class="grid grid-flow-col auto-cols-[77%] gap-4 overflow-x-auto overscroll-x-contain px-8 pb-8 snap-x snap-mandatory scroll-px-4">
+            <ng-container *ngFor="let filePath of imageFilePaths">
+                <div class="p-1 bg-zcb-primary rounded-sm grid shadow-md snap-start">
+                    <img class="w-full aspect-video object-cover" [src]="filePath" alt="">
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>
