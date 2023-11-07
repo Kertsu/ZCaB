@@ -1,0 +1,42 @@
+#wings {
+    position: relative;
+  }
+  
+  #wings::before,
+  #wings::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 6px;
+    background: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  
+  #wings::before {
+    left: 0;
+    transform-origin: right;
+  }
+  
+  #wings::after {
+    right: 0;
+    transform-origin: left;
+  }
+  
+  
+  .active-link#wings::before {
+    transform: scaleX(1);
+  }
+  
+  .active-link#wings::after {
+    transform: scaleX(1);
+  }
+  
+#menu{
+  transition: height .4s ease-in ;
+}
+
+.show{
+  height: 244px !important;
+}
