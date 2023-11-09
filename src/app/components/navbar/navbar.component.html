@@ -32,12 +32,12 @@
     <fa-icon class="text-lg" (click)="toggleIcon()" [icon]="icon"></fa-icon>
   </div>
 
-  <div id="menu" [class.show]="showMenu" class="bg-zcb-secondary top-16 h-0 right-0 left-0 absolute overflow-hidden">
+  <div id="menu" [class.show]="showMenu" class="bg-zcb-secondary top-16 h-0 right-0 left-0 absolute overflow-hidden z-50 ">
     <div
-      class="w-full h-full flex flex-col justify-center items-center p-2 gap-4 border"
+      class="w-full h-full flex flex-col justify-center items-center p-2 gap-4 border z-50 "
     >
-      <a routerLink="/home" routerLinkActive="active-link font-bold" class=" text-center w-full text-xl px-4 py-2" id="wings">Home</a>
-      <a routerLink="/products" routerLinkActive="active-link font-bold" class=" text-center w-full text-xl px-4 py-2" id="wings">Products</a>
+      <a routerLink="/home" routerLinkActive="active-link font-bold" class=" text-center w-full text-xl px-4 py-2 z-50" id="wings">Home</a>
+      <a routerLink="/products" routerLinkActive="active-link font-bold" class=" text-center w-full text-xl px-4 py-2 z-50" id="wings">Products</a>
     </div>
   </div>
 </nav>

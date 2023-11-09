@@ -14,6 +14,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { HomeSectionTwoComponent } from './components/home-section-two/home-section-two.component';
 import { HomeSectionThreeComponent } from './components/home-section-three/home-section-three.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { CurtainsComponent } from './components/curtains/curtains.component';
+import { BeddingsComponent } from './components/beddings/beddings.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     CarouselComponent,
     HomeSectionTwoComponent,
     HomeSectionThreeComponent,
-    GalleryComponent
+    GalleryComponent,
+    CurtainsComponent,
+    BeddingsComponent
   ],
   imports: [
     BrowserModule,
