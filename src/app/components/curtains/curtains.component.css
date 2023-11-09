@@ -1,0 +1,15 @@
+#hover::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    bottom: 0;
+    left: calc(2.5rem * -1);
+
+    transition: width 500ms ease;
+}
+
+#hover-parent:hover #hover::after{
+    width: 100%;
+}
