@@ -1,7 +1,52 @@
 
 
-<div class="w-full h-[30vh] relative flex justify-center items-center">
-    <img src="assets/images/bed_hero.jpeg" class="aspect-video object-cover block h-full absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt="Bed hero">
-    <div class="block h-full absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" style="background: rgba(0, 0, 0, 0.3);"></div>
-    <h1 class="text-4xl text-white z-20">Beddings</h1>
+<div class="w-full h-[30vh] relative flex justify-center items-center md:justify-start lg:h-[50vh]">
+  <img src="assets/images/bed_hero.jpg" class="aspect-video object-cover block h-full absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt="Curtain hero">
+  <div class="block h-full absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" style="background: rgba(0, 0, 0, 0.3);"></div>
+  <h1 class="text-4xl text-white z-20 px-10 md:text-6xl">Beddings</h1>
+</div>
+
+<div class="w-full px-10 mt-16 flex flex-col gap-6 lg:mb-16 lg:flex-row ">
+  <div class="flex-col flex gap-4 lg:w-1/2">
+    <h1 id="custom-font-family" class="font-bold text-2xl md:text-4xl">Our Bedding Products</h1>
+    <p>
+      At Zhahnelle's Beddings, we understand the importance of a good night's sleep and how it can significantly impact your well-being. That's why our bedding products are thoughtfully designed and crafted from the finest materials to provide you with a cozy retreat that invites relaxation. Whether you prefer classic, timeless designs or contemporary styles, our bedding collection offers a variety of options to match your taste and elevate your bedroom decor.
+    </p>
+    <p> Choose quality, comfort, and beauty for your bedding needs with Zhahnelle's Beddings, and experience the difference that superior beddings can make in your life. Our commitment to craftsmanship and attention to detail ensures that you enjoy a restful night's sleep in style. Explore our bedding products to experience a world of comfort, elegance, and peaceful slumber.
+    
+    </p>
   </div>
+  <div class=" hidden border lg:w-1/2 lg:flex lg:flex-col justify-around items-center">
+    <div class="flex flex-col gap-4 ">
+      <div class="grid grid-flow-col auto-cols-[100%] gap-4 overflow-x-auto overscroll-x-contain px-8 snap-x snap-mandatory scroll-px-4 scroll-smooth">
+        <ng-container *ngFor="let imageGroup of imageFilePathsGroup; let i = index">
+          <div class="p-1 bg-zcb-primary rounded-sm grid shadow-md snap-start grid-flow-row gap-4 justify-center items-center lg:grid-flow-col py-4">
+            <ng-container *ngFor="let filePath of imageGroup">
+              <img class="w-full aspect-square object-cover" [src]="filePath" alt="" />
+            </ng-container>
+          </div>
+        </ng-container>
+      </div>
+      </div>
+      <h1 id="custom-font-family" class="hidden lg:block font-bold text-2xl relative mb-4 md:text-4xl 2xl:mt-4">Bedding Gallery</h1>
+
+  </div>
+</div>
+
+<div class="w-full mt-16 px-10 gap-4 lg:hidden">
+  <h1 id="custom-font-family" class="font-bold text-2xl relative mb-4 md:text-4xl">Bedding Gallery</h1>
+  <div class="flex flex-col gap-4 ">
+    <div class="grid grid-flow-col auto-cols-[100%] gap-4 overflow-x-auto overscroll-x-contain px-8 pb-8 snap-x snap-mandatory scroll-px-4 scroll-smooth">
+      <ng-container *ngFor="let imageGroup of imageFilePathsGroup; let i = index">
+        <div class="p-1 bg-zcb-primary rounded-sm grid shadow-md snap-start grid-flow-row gap-4 justify-center items-center md:grid-flow-col">
+          <ng-container *ngFor="let filePath of imageGroup">
+            <img class="w-full aspect-square object-cover" [src]="filePath" alt="" />
+          </ng-container>
+        </div>
+      </ng-container>
+    </div>
+    </div>
+   
+</div>
+
+

@@ -1,7 +1,52 @@
 
 
-<div class="w-full h-[30vh] relative flex justify-center items-center">
-  <img src="assets/images/curtain_hero.jpeg" class="aspect-video object-cover block h-full absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt="Curtain hero">
+<div class="w-full h-[30vh] relative flex justify-center items-center md:justify-start lg:h-[50vh]">
+  <img src="assets/images/curtain_hero.jpg" class="aspect-video object-cover block h-full absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt="Curtain hero">
   <div class="block h-full absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-10" style="background: rgba(0, 0, 0, 0.3);"></div>
-  <h1 class="text-4xl text-white z-20">Curtains</h1>
+  <h1 class="text-4xl text-white z-20 px-10 md:text-6xl">Curtains</h1>
 </div>
+
+<div class="w-full px-10 mt-16 flex flex-col gap-6 lg:mb-16 lg:flex-row ">
+  <div class="flex-col flex gap-4 lg:w-1/2">
+    <h1 id="custom-font-family" class="font-bold text-2xl md:text-4xl">Our Curtain Products</h1>
+    <p>
+      When it comes to enhancing the ambiance and functionality of your living spaces, our collection of curtain products stands as the epitome of elegance and versatility. Crafted with meticulous attention to detail, our curtains offer more than just a stylish window dressing. They are designed to transform any room, from your bedroom to the living room, with their wide range of colors, patterns, and materials that cater to diverse tastes.
+    </p>
+    <p>Whether you're seeking privacy, protection from harsh sunlight, or a touch of sophistication, our curtains are the perfect solution. With their high-quality materials and precise construction, they not only elevate your home decor but also provide energy-efficient features that help maintain a comfortable environment year-round.
+    
+    </p>
+  </div>
+  <div class=" hidden border lg:w-1/2 lg:flex lg:flex-col justify-around items-center">
+    <div class="flex flex-col gap-4 ">
+      <div class="grid grid-flow-col auto-cols-[100%] gap-4 overflow-x-auto overscroll-x-contain px-8 snap-x snap-mandatory scroll-px-4 scroll-smooth">
+        <ng-container *ngFor="let imageGroup of imageFilePathsGroup; let i = index">
+          <div class="p-1 bg-zcb-primary rounded-sm grid shadow-md snap-start grid-flow-row gap-4 justify-center items-center lg:grid-flow-col py-4">
+            <ng-container *ngFor="let filePath of imageGroup">
+              <img class="w-full aspect-square object-cover" [src]="filePath" alt="" />
+            </ng-container>
+          </div>
+        </ng-container>
+      </div>
+      </div>
+      <h1 id="custom-font-family" class="hidden lg:block font-bold text-2xl relative mb-4 md:text-4xl 2xl:mt-4">Curtain Gallery</h1>
+
+  </div>
+</div>
+
+<div class="w-full mt-16 px-10 gap-4 lg:hidden">
+  <h1 id="custom-font-family" class="font-bold text-2xl relative mb-4 md:text-4xl">Curtain Gallery</h1>
+  <div class="flex flex-col gap-4 ">
+    <div class="grid grid-flow-col auto-cols-[100%] gap-4 overflow-x-auto overscroll-x-contain px-8 pb-8 snap-x snap-mandatory scroll-px-4 scroll-smooth">
+      <ng-container *ngFor="let imageGroup of imageFilePathsGroup; let i = index">
+        <div class="p-1 bg-zcb-primary rounded-sm grid shadow-md snap-start grid-flow-row gap-4 justify-center items-center md:grid-flow-col">
+          <ng-container *ngFor="let filePath of imageGroup">
+            <img class="w-full aspect-square object-cover" [src]="filePath" alt="" />
+          </ng-container>
+        </div>
+      </ng-container>
+    </div>
+    </div>
+   
+</div>
+
+
