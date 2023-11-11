@@ -16,6 +16,7 @@ import { HomeSectionThreeComponent } from './components/home-section-three/home-
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { CurtainsComponent } from './components/curtains/curtains.component';
 import { BeddingsComponent } from './components/beddings/beddings.component';
+import { CurtainProductComponent } from './components/curtain-product/curtain-product.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { BeddingsComponent } from './components/beddings/beddings.component';
     HomeSectionThreeComponent,
     GalleryComponent,
     CurtainsComponent,
-    BeddingsComponent
+    BeddingsComponent,
+    CurtainProductComponent
   ],
   imports: [
     BrowserModule,
