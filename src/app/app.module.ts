@@ -17,6 +17,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { CurtainsComponent } from './components/curtains/curtains.component';
 import { BeddingsComponent } from './components/beddings/beddings.component';
 import { CurtainProductComponent } from './components/curtain-product/curtain-product.component';
+import { BeddingProductComponent } from './components/bedding-product/bedding-product.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CurtainProductComponent } from './components/curtain-product/curtain-pr
     GalleryComponent,
     CurtainsComponent,
     BeddingsComponent,
-    CurtainProductComponent
+    CurtainProductComponent,
+    BeddingProductComponent
   ],
   imports: [
     BrowserModule,

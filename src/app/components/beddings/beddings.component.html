@@ -50,3 +50,11 @@
 </div>
 
 
+<div class="w-full pb-16 px-10 bg-zcb-alternate border flex flex-col justify-center items-start gap-8 lg:items-center">
+  <h1 id="custom-font-family" class="font-bold text-2xl relative mt-16 md:text-4xl">A Closer Look</h1>
+  <div class="flex flex-col gap-8 md:gap-10 2xl:gap-14">
+    <ng-container *ngFor="let bedding of beddings; let even = even">
+      <app-bedding-product [imageSrc]="bedding.image" [description]="bedding.description" [alternate]="even"></app-bedding-product>
+    </ng-container>
+  </div>
+</div>
